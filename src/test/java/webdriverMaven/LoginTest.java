@@ -23,6 +23,7 @@ public void DoLogin()
 {
 	Driver.get("https://www.amazon.in/");
 	Driver.findElement(By.xpath("//*[@id=\'nav-signin-tooltip\']/a/span")).click();
+	Driver.findElement(By.xpath("//*[@id=\'ap_email\']")).sendKeys("testlogin");
 	
 }
 @AfterSuite
